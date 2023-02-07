@@ -1,0 +1,24 @@
+<div class="row" infinite-scroll >
+    <div class="col-xs-12 col-sm-6 col-md-4" *ngIf="character">
+        <div class="card">
+            <div class="img">
+                <a>
+                    <img                   
+                        [src]="character.image"            
+                        [alt]="character.name"
+                        class="card-img-top"
+                    />              
+                </a> 
+            </div>
+            <div class="card-inner">
+                <div class="header">
+                    <h3 style="color:#007bff">{{character.name}}</h3>
+                    <h4 class="text-muted">Gender: <span class="greenWord">{{character.gender}}</span> </h4>
+                    <h4 class="text-muted">Specie: <span class="greenWord">{{character.species}}</span> </h4>
+                    <small class="">Appears in {{character.episode.length}} episodes!</small>
+                </div>                   
+            </div>
+        </div>
+    </div>
+    
+</div>
